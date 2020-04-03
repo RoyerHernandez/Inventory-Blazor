@@ -72,6 +72,13 @@ using Inventory.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\_Imports.razor"
+using Inventory.Components.Exercises.BlazorPages;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
     public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
     {

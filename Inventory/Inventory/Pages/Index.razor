@@ -1,30 +1,5 @@
 ﻿@page "/"
 
-
-<form style="border-style">
-    <label>Ingrese su texto aquí</label>
-    <br />
-    <input type="text" @bind="@CurrentValue" />
-    <input type="button" value="Haga clic aqui" @onclick="ChageText" />
-    <br />
-    <br />
-    <label>Texto a mostrar</label>
-    <br />
-    <input type="text" @bind-value="@message" />
-
-</form>
+<Form001 CurrentValue="Un Saludo" />
 
 
-@code{
-
-    private string CurrentValue { get; set; }
-    string message;
-    //string txt1, txt2;
-
-    public void ChageText()
-    {
-        message = CurrentValue;
-        CurrentValue = "";
-    }
-
-}

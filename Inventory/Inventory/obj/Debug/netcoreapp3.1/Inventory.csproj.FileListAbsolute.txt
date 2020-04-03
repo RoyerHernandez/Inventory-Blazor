@@ -49,3 +49,5 @@ D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\In
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Inventory.pdb
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Inventory.genruntimeconfig.cache
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Inventory.csproj.CopyComplete
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Exercises\BlazorPages\Form001.razor.g.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Exercises\BlazorPages\Form001.razor.g.cs
