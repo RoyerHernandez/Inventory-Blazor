@@ -1,0 +1,15 @@
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.deps.json
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.runtimeconfig.json
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.runtimeconfig.dev.json
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.dll
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.pdb
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\DataAccess\bin\Debug\netcoreapp3.1\Entities.dll
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\DataAccess\bin\Debug\netcoreapp3.1\Entities.pdb
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csprojAssemblyReference.cache
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CoreCompileInputs.cache
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfoInputs.cache
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfo.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CopyComplete
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.dll
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.pdb
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.genruntimeconfig.cache

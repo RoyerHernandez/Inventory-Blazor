@@ -1,0 +1,9 @@
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Entities\bin\Debug\netcoreapp3.1\Entities.deps.json
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Entities\bin\Debug\netcoreapp3.1\Entities.dll
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Entities\obj\Debug\netcoreapp3.1\Entities.csprojAssemblyReference.cache
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Entities\obj\Debug\netcoreapp3.1\Entities.dll
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Entities\obj\Debug\netcoreapp3.1\Entities.pdb

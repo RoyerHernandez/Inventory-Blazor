@@ -84,6 +84,13 @@ using Inventory.Components.Exercises.BlazorPages;
 #line hidden
 #nullable disable
 #nullable restore
+#line 11 "D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\_Imports.razor"
+using Inventory.Components.Products;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\Pages\FetchData.razor"
 using Inventory.Data;
 
