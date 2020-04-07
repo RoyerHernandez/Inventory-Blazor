@@ -93,3 +93,7 @@ D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\In
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Inventory.genruntimeconfig.cache
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Products\ListProductsComponent.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Products\ListProductsComponent.razor.g.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Products\ListProductPage.razor.g.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Pages\Products\ListProductPage.razor.g.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Products\CreateProductsPage.razor.g.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Pages\Products\CreateProductsPage.razor.g.cs

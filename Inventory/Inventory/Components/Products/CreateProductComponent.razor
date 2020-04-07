@@ -1,6 +1,8 @@
 ﻿@using Entities;
 @using Business;
 
+@inject NavigationManager NavManager
+
 <div>
 
     <EditForm Model="oProduct">
@@ -45,5 +47,7 @@
     public void SaveProduct()
     {
         B_Product.CreateProduct(oProduct);
+        
+        NavManager.NavigateTo("product/list");
     }
 }

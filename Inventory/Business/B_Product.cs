@@ -18,8 +18,15 @@ namespace Business
             }
         }
 
-        public static void CreateProduct(ProductEntity oProduct)
+        public static ProductEntity ProductById(string id)
         {
+            using (var db = new InventaryContext())
+            {
+                return db.Products.LastOrDefault(p=>p.productId==id);
+            }
+        }
+        public static void CreateProduct(ProductEntity oProduct)
+        {   
             using (var db = new InventaryContext())
             {
                 try {
