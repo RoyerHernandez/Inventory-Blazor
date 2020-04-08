@@ -22,7 +22,7 @@ namespace Business
         {
             using (var db = new InventaryContext())
             {
-                return db.Products.LastOrDefault(p=>p.productId==id);
+                return db.Products.ToList().LastOrDefault(p=>p.productId==id);
             }
         }
         public static void CreateProduct(ProductEntity oProduct)
@@ -44,6 +44,7 @@ namespace Business
             using (var db = new InventaryContext()) 
             {
                 db.Products.Update(oProduct);
+                db.SaveChanges();
             }
         }
     }

@@ -91,6 +91,13 @@ using Inventory.Components.Products;
 #line hidden
 #nullable disable
 #nullable restore
+#line 12 "D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\_Imports.razor"
+using Inventory.Components.Categories;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\Pages\FetchData.razor"
 using Inventory.Data;
 

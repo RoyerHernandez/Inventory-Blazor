@@ -86,6 +86,13 @@ using Inventory.Components.Products;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 12 "D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\_Imports.razor"
+using Inventory.Components.Categories;
+
+#line default
+#line hidden
+#nullable disable
     public partial class Form002 : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
