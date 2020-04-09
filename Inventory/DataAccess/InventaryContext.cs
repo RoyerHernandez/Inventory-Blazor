@@ -32,11 +32,11 @@ namespace DataAccess
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<CategoryEntity>().HasData(
-                new CategoryEntity { categoryId="JS", categoryName= "Juguetes Sexuales"},
-                new CategoryEntity { categoryId = "LI", categoryName = "Lubricantes Intimos" },
-                new CategoryEntity { categoryId = "RE", categoryName = "Retardantes" },
-                new CategoryEntity { categoryId = "RI", categoryName = "Ropa Intiva" },
-                new CategoryEntity { categoryId = "AS", categoryName = "Accesorios Sexuales" }
+                new CategoryEntity { categoryId="MD", categoryName= "Medicamentos"},
+                new CategoryEntity { categoryId = "JB", categoryName = "Jabones" },
+                new CategoryEntity { categoryId = "BT", categoryName = "Boticario" },
+                new CategoryEntity { categoryId = "PB", categoryName = "Productos Bucales" },
+                new CategoryEntity { categoryId = "AS", categoryName = "Aseo Personal" }
                 );
 
             modelBuilder.Entity<WarehouseEntity>().HasData(
@@ -45,8 +45,8 @@ namespace DataAccess
                 );
 
             modelBuilder.Entity<ProductEntity>().HasData(
-                new ProductEntity { productId = "ASJ-98745", productName = "Consoladores", productDesciption = "", categoryId = "JS" },
-                new ProductEntity { productId = "RPT-5465879", productName = "Aceite retardante", productDesciption = "", categoryId = "RE" }
+                new ProductEntity { productId = "ASJ-98745", productName = "Medicamento", productDesciption = "", categoryId = "MD" },
+                new ProductEntity { productId = "RPT-5465879", productName = "Boticario", productDesciption = "", categoryId = "BT" }
                 );
         }
 

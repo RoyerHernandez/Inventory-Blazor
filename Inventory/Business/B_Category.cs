@@ -18,6 +18,13 @@ namespace Business
             }
         }
 
+        public static CategoryEntity CategoryById(string id)
+        {
+            using (var db = new InventaryContext())
+            {
+                return db.Categories.ToList().LastOrDefault(c => c.categoryId == id);
+            }
+        }
         public static void CreateCategory(CategoryEntity oCategory)
         {
             using (var db = new InventaryContext())

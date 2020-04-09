@@ -119,11 +119,11 @@ namespace DataAccess.Migrations
                 columns: new[] { "categoryId", "categoryName" },
                 values: new object[,]
                 {
-                    { "JS", "Juguetes Sexuales" },
-                    { "LI", "Lubricantes Intimos" },
-                    { "RE", "Retardantes" },
-                    { "RI", "Ropa Intiva" },
-                    { "AS", "Accesorios Sexuales" }
+                    { "MD", "Medicamentos" },
+                    { "JB", "Jabones" },
+                    { "BT", "Boticario" },
+                    { "PB", "Productos Bucales" },
+                    { "AS", "Aseo Personal" }
                 });
 
             migrationBuilder.InsertData(
@@ -131,19 +131,19 @@ namespace DataAccess.Migrations
                 columns: new[] { "warehouseId", "WarehouseEntitywarehouseId", "warehouseAddress", "warehouseName" },
                 values: new object[,]
                 {
-                    { "5c72a10c-bbd7-4676-8c8e-3e49718f8992", null, "Calle 8 con 23", "Bodega Central" },
-                    { "6ef3f770-ee8e-464e-a654-424dead10c77", null, "Calle norte con occidente", "Bodega Norte" }
+                    { "948741e3-e7f2-4fe1-9c7f-6b18d0b9f14f", null, "Calle 8 con 23", "Bodega Central" },
+                    { "e8de297e-dbdf-4afb-b65e-f3ce7f55e426", null, "Calle norte con occidente", "Bodega Norte" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Products",
                 columns: new[] { "productId", "WarehouseEntitywarehouseId", "categoryId", "productDesciption", "productName", "totalQuantity" },
-                values: new object[] { "ASJ-98745", null, "JS", "", "Consoladores", 0m });
+                values: new object[] { "ASJ-98745", null, "MD", "", "Medicamento", 0m });
 
             migrationBuilder.InsertData(
                 table: "Products",
                 columns: new[] { "productId", "WarehouseEntitywarehouseId", "categoryId", "productDesciption", "productName", "totalQuantity" },
-                values: new object[] { "RPT-5465879", null, "RE", "", "Aceite retardante", 0m });
+                values: new object[] { "RPT-5465879", null, "BT", "", "Boticario", 0m });
 
             migrationBuilder.CreateIndex(
                 name: "IX_InOuts_storageId",

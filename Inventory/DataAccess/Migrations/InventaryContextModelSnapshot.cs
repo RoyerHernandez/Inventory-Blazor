@@ -36,28 +36,28 @@ namespace DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            categoryId = "JS",
-                            categoryName = "Juguetes Sexuales"
+                            categoryId = "MD",
+                            categoryName = "Medicamentos"
                         },
                         new
                         {
-                            categoryId = "LI",
-                            categoryName = "Lubricantes Intimos"
+                            categoryId = "JB",
+                            categoryName = "Jabones"
                         },
                         new
                         {
-                            categoryId = "RE",
-                            categoryName = "Retardantes"
+                            categoryId = "BT",
+                            categoryName = "Boticario"
                         },
                         new
                         {
-                            categoryId = "RI",
-                            categoryName = "Ropa Intiva"
+                            categoryId = "PB",
+                            categoryName = "Productos Bucales"
                         },
                         new
                         {
                             categoryId = "AS",
-                            categoryName = "Accesorios Sexuales"
+                            categoryName = "Aseo Personal"
                         });
                 });
 
@@ -119,17 +119,17 @@ namespace DataAccess.Migrations
                         new
                         {
                             productId = "ASJ-98745",
-                            categoryId = "JS",
+                            categoryId = "MD",
                             productDesciption = "",
-                            productName = "Consoladores",
+                            productName = "Medicamento",
                             totalQuantity = 0m
                         },
                         new
                         {
                             productId = "RPT-5465879",
-                            categoryId = "RE",
+                            categoryId = "BT",
                             productDesciption = "",
-                            productName = "Aceite retardante",
+                            productName = "Boticario",
                             totalQuantity = 0m
                         });
                 });
@@ -189,13 +189,13 @@ namespace DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            warehouseId = "829e67ba-995a-4dc7-b3ba-36840e6971ae",
+                            warehouseId = "5b70e2c4-fac0-4cf5-92d9-ecc73231e8b1",
                             warehouseAddress = "Calle 8 con 23",
                             warehouseName = "Bodega Central"
                         },
                         new
                         {
-                            warehouseId = "ec1b76a7-c04f-45e5-aff2-4d8793c115f3",
+                            warehouseId = "ecbb9edf-fa46-4935-80a5-b53fad2dc131",
                             warehouseAddress = "Calle norte con occidente",
                             warehouseName = "Bodega Norte"
                         });
