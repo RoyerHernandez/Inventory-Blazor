@@ -1,0 +1,14 @@
+﻿@page "/storage/update/{IdStorage}"
+
+<UpdateStorageComponent IdStorage="@IdStorage" />
+
+@code
+{
+    [Parameter]
+    public string IdStorage { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        IdStorage = IdStorage;
+    }
+}

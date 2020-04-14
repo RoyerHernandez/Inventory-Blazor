@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(InventaryContext))]
-    [Migration("20200409012644_FirstMigration")]
+    [Migration("20200410234124_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -142,19 +142,16 @@ namespace DataAccess.Migrations
                         .HasColumnType("nvarchar(100)")
                         .HasMaxLength(100);
 
-                    b.Property<decimal>("partialQuantity")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<DateTime>("LastUpdate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("partialQuantity")
+                        .HasColumnType("int");
 
                     b.Property<string>("productId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("storageName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("warehouseId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(100)");
 
                     b.HasKey("storageId");
@@ -191,13 +188,13 @@ namespace DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            warehouseId = "948741e3-e7f2-4fe1-9c7f-6b18d0b9f14f",
+                            warehouseId = "33e856c1-15a8-4259-aa35-f42c95d59bce",
                             warehouseAddress = "Calle 8 con 23",
                             warehouseName = "Bodega Central"
                         },
                         new
                         {
-                            warehouseId = "e8de297e-dbdf-4afb-b65e-f3ce7f55e426",
+                            warehouseId = "2fefa5e8-e06d-4287-9ad5-91df4e37bc2d",
                             warehouseAddress = "Calle norte con occidente",
                             warehouseName = "Bodega Norte"
                         });
@@ -229,15 +226,11 @@ namespace DataAccess.Migrations
                 {
                     b.HasOne("Entities.ProductEntity", "Product")
                         .WithMany("Storages")
-                        .HasForeignKey("productId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("productId");
 
                     b.HasOne("Entities.WarehouseEntity", "warehouse")
                         .WithMany()
-                        .HasForeignKey("warehouseId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("warehouseId");
                 });
 
             modelBuilder.Entity("Entities.WarehouseEntity", b =>

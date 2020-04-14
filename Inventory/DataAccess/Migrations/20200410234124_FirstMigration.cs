@@ -72,10 +72,10 @@ namespace DataAccess.Migrations
                 columns: table => new
                 {
                     storageId = table.Column<string>(maxLength: 100, nullable: false),
-                    storageName = table.Column<string>(nullable: false),
-                    partialQuantity = table.Column<decimal>(nullable: false),
-                    warehouseId = table.Column<string>(nullable: false),
-                    productId = table.Column<string>(nullable: false)
+                    partialQuantity = table.Column<int>(nullable: false),
+                    LastUpdate = table.Column<DateTime>(nullable: false),
+                    warehouseId = table.Column<string>(nullable: true),
+                    productId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -85,13 +85,13 @@ namespace DataAccess.Migrations
                         column: x => x.productId,
                         principalTable: "Products",
                         principalColumn: "productId",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Storages_Warehouses_warehouseId",
                         column: x => x.warehouseId,
                         principalTable: "Warehouses",
                         principalColumn: "warehouseId",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -131,8 +131,8 @@ namespace DataAccess.Migrations
                 columns: new[] { "warehouseId", "WarehouseEntitywarehouseId", "warehouseAddress", "warehouseName" },
                 values: new object[,]
                 {
-                    { "948741e3-e7f2-4fe1-9c7f-6b18d0b9f14f", null, "Calle 8 con 23", "Bodega Central" },
-                    { "e8de297e-dbdf-4afb-b65e-f3ce7f55e426", null, "Calle norte con occidente", "Bodega Norte" }
+                    { "33e856c1-15a8-4259-aa35-f42c95d59bce", null, "Calle 8 con 23", "Bodega Central" },
+                    { "2fefa5e8-e06d-4287-9ad5-91df4e37bc2d", null, "Calle norte con occidente", "Bodega Norte" }
                 });
 
             migrationBuilder.InsertData(

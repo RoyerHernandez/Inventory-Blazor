@@ -140,19 +140,16 @@ namespace DataAccess.Migrations
                         .HasColumnType("nvarchar(100)")
                         .HasMaxLength(100);
 
-                    b.Property<decimal>("partialQuantity")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<DateTime>("LastUpdate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("partialQuantity")
+                        .HasColumnType("int");
 
                     b.Property<string>("productId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("storageName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("warehouseId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(100)");
 
                     b.HasKey("storageId");
@@ -189,13 +186,13 @@ namespace DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            warehouseId = "5b70e2c4-fac0-4cf5-92d9-ecc73231e8b1",
+                            warehouseId = "cb6b5614-9758-4b83-8963-0985e64c4f75",
                             warehouseAddress = "Calle 8 con 23",
                             warehouseName = "Bodega Central"
                         },
                         new
                         {
-                            warehouseId = "ecbb9edf-fa46-4935-80a5-b53fad2dc131",
+                            warehouseId = "c511dccf-f030-4cc0-861e-da280302cf0e",
                             warehouseAddress = "Calle norte con occidente",
                             warehouseName = "Bodega Norte"
                         });
@@ -227,15 +224,11 @@ namespace DataAccess.Migrations
                 {
                     b.HasOne("Entities.ProductEntity", "Product")
                         .WithMany("Storages")
-                        .HasForeignKey("productId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("productId");
 
                     b.HasOne("Entities.WarehouseEntity", "warehouse")
                         .WithMany()
-                        .HasForeignKey("warehouseId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("warehouseId");
                 });
 
             modelBuilder.Entity("Entities.WarehouseEntity", b =>

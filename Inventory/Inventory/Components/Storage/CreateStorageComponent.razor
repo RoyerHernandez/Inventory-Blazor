@@ -1,0 +1,84 @@
+﻿@using Entities
+@using Business
+
+@inject NavigationManager NavManager
+
+<EditForm Model="@oStorage">
+    <DataAnnotationsValidator />
+    <div class="form-group">
+        <label for="categories">Bodega:</label>
+        <InputSelect id="wherehouses" @bind-Value="oStorage.warehouseId" class="form-control">
+            <option value="">Seleccionar bodega ...</option>
+            @foreach (var wherehouse in warehouses)
+            {
+                <option value="@wherehouse.warehouseId">@wherehouse.warehouseName</option>
+            }
+        </InputSelect>
+    </div>
+    <div class="form-group">
+        <label for="products">Producto:</label>
+        <InputSelect id="products" @bind-Value="oStorage.productId" class="form-control">
+            <option value="">Seleccionar producto ...</option>
+            @foreach (var product in products)
+            {
+                <option value="@product.productId">@product.productName</option>
+            }
+        </InputSelect>
+    </div>
+    <div class="form-group">
+        <input type="button" value="Agregar Producto" @onclick="Save" class="form-control btn btn-dark" />
+    </div>
+</EditForm>
+<hr />
+<div class="h3 text-center">
+    @message
+</div>
+<hr />
+
+@code {
+    StorageEntity oStorage = new StorageEntity();
+    private List<ProductEntity> products = new List<ProductEntity>();
+    private List<WarehouseEntity> warehouses = new List<WarehouseEntity>();
+
+    private string message;
+
+    protected override async Task OnInitializedAsync()
+    {
+        warehouses = B_Warehouse.WarehouseList();
+        products = B_Product.ProductList();
+    }
+
+    private void Save()
+    {
+        if (!string.IsNullOrEmpty(oStorage.warehouseId) && !string.IsNullOrEmpty(oStorage.productId))
+        {
+            var id = $"{oStorage.warehouseId}-{oStorage.productId}";
+
+            if (!B_Storage.IsProductInWarehouse(id)) // Agregar esto al B_Storage
+            {
+                oStorage.storageId = id;
+                oStorage.LastUpdate = DateTime.Now;
+                var saveStorage = B_Storage.CreateStorage(oStorage);
+
+                message = $"El producto {saveStorage.Product.productName} se agregó {saveStorage.warehouse.warehouseName}";
+            }
+            else
+            {
+                var oldStorage = B_Storage.GetStorageById(id);
+                message = $"El producto {oldStorage.Product.productName} ya se encuentra en a bodega {oldStorage.warehouse.warehouseName}";
+            }
+        }
+        else
+        {
+            message = $"El producto {oStorage.productId} no pudo ser registrado";
+        }
+
+        //oStorage.WherehouseId = "";
+        oStorage.productId = "";
+    }
+
+    private void HandleValidSubmit()
+    {
+        Console.WriteLine("OnValidSubmit");
+    }
+}
