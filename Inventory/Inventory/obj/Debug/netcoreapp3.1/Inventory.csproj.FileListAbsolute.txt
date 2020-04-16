@@ -55,6 +55,7 @@ D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Ra
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Categories\UpdateCategoryComponent.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Exercises\BlazorPages\Form001.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Exercises\Forms\Form002.razor.g.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\InOuts\CreateInOutsComponent.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Products\CreateProductComponent.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Products\ListProductsComponent.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Products\UpdateProductComponent.razor.g.cs
@@ -71,6 +72,7 @@ D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Ra
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Products\CreateProductsPage.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Products\ListProductPage.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Products\UpdateProductPage.razor.g.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Storages\CreateStoragePage.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Storages\ListStoragePage.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Storages\UpdateStoragePage.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
@@ -87,6 +89,7 @@ D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Ra
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Categories\UpdateCategoryComponent.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Exercises\BlazorPages\Form001.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Exercises\Forms\Form002.razor.g.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\InOuts\CreateInOutsComponent.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Products\CreateProductComponent.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Products\ListProductsComponent.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Products\UpdateProductComponent.razor.g.cs
@@ -103,6 +106,7 @@ D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Ra
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Pages\Products\CreateProductsPage.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Pages\Products\ListProductPage.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Pages\Products\UpdateProductPage.razor.g.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Pages\Storages\CreateStoragePage.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Pages\Storages\ListStoragePage.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Pages\Storages\UpdateStoragePage.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
@@ -123,5 +127,9 @@ D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\st
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Inventory.dll
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Inventory.pdb
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Inventory.genruntimeconfig.cache
-D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Storages\CreateStoragePage.razor.g.cs
-D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Pages\Storages\CreateStoragePage.razor.g.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Warehouses\CreateWarehouseComponent.razor.g.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\InOuts\CreateInOutsPage.razor.g.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Warehouses\CreateWarehousePage.razor.g.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Warehouses\CreateWarehouseComponent.razor.g.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Pages\InOuts\CreateInOutsPage.razor.g.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Pages\Warehouses\CreateWarehousePage.razor.g.cs

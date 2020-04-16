@@ -101,6 +101,20 @@ using Inventory.Components.Storage;
 #line hidden
 #nullable disable
 #nullable restore
+#line 14 "D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\_Imports.razor"
+using Inventory.Components.InOuts;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\_Imports.razor"
+using Inventory.Components.Warehouses;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\Components\Categories\CreateCategoryComponent.razor"
 using Entities;
 

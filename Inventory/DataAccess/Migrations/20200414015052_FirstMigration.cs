@@ -100,8 +100,9 @@ namespace DataAccess.Migrations
                 {
                     inOutsID = table.Column<string>(maxLength: 100, nullable: false),
                     InOutDate = table.Column<DateTime>(nullable: false),
-                    Quality = table.Column<string>(nullable: true),
-                    storageId = table.Column<string>(nullable: false)
+                    Quality = table.Column<int>(nullable: false),
+                    IsInput = table.Column<bool>(nullable: false),
+                    storageId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -111,7 +112,7 @@ namespace DataAccess.Migrations
                         column: x => x.storageId,
                         principalTable: "Storages",
                         principalColumn: "storageId",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.InsertData(
@@ -131,8 +132,8 @@ namespace DataAccess.Migrations
                 columns: new[] { "warehouseId", "WarehouseEntitywarehouseId", "warehouseAddress", "warehouseName" },
                 values: new object[,]
                 {
-                    { "33e856c1-15a8-4259-aa35-f42c95d59bce", null, "Calle 8 con 23", "Bodega Central" },
-                    { "2fefa5e8-e06d-4287-9ad5-91df4e37bc2d", null, "Calle norte con occidente", "Bodega Norte" }
+                    { "77659337-b460-49ed-97b0-24d50d5d5bc3", null, "Calle 8 con 23", "Bodega Central" },
+                    { "800b48c9-001c-42f5-945b-32a88b851be1", null, "Calle norte con occidente", "Bodega Norte" }
                 });
 
             migrationBuilder.InsertData(

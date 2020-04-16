@@ -100,6 +100,20 @@ using Inventory.Components.Storage;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 14 "D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\_Imports.razor"
+using Inventory.Components.InOuts;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\_Imports.razor"
+using Inventory.Components.Warehouses;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/product/list")]
     public partial class ListProductPage : Microsoft.AspNetCore.Components.ComponentBase
     {

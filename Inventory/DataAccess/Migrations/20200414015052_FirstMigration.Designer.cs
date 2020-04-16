@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(InventaryContext))]
-    [Migration("20200410234220_AddData")]
-    partial class AddData
+    [Migration("20200414015052_FirstMigration")]
+    partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -72,11 +72,13 @@ namespace DataAccess.Migrations
                     b.Property<DateTime>("InOutDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Quality")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<bool>("IsInput")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("Quality")
+                        .HasColumnType("int");
 
                     b.Property<string>("storageId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(100)");
 
                     b.HasKey("inOutsID");
@@ -188,13 +190,13 @@ namespace DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            warehouseId = "cb6b5614-9758-4b83-8963-0985e64c4f75",
+                            warehouseId = "77659337-b460-49ed-97b0-24d50d5d5bc3",
                             warehouseAddress = "Calle 8 con 23",
                             warehouseName = "Bodega Central"
                         },
                         new
                         {
-                            warehouseId = "c511dccf-f030-4cc0-861e-da280302cf0e",
+                            warehouseId = "800b48c9-001c-42f5-945b-32a88b851be1",
                             warehouseAddress = "Calle norte con occidente",
                             warehouseName = "Bodega Norte"
                         });
@@ -204,9 +206,7 @@ namespace DataAccess.Migrations
                 {
                     b.HasOne("Entities.StorageEntity", "Storage")
                         .WithMany("InOuts")
-                        .HasForeignKey("storageId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("storageId");
                 });
 
             modelBuilder.Entity("Entities.ProductEntity", b =>

@@ -1,0 +1,34 @@
+﻿@using Entities;
+@using Business;
+
+    <div>
+        <EditForm Model="oWarehouse">
+            <label>Identificador de la Bodega:</label>
+            <InputText @bind-Value="oWarehouse.warehouseId" class="form-group"></InputText>
+            <br />
+            <label>Nombre de la Bodega:</label>
+            <InputText @bind-Value="oWarehouse.warehouseName" class="form-group"></InputText>
+            <br />
+            <label>Dirección de la Bodega:</label>
+            <InputText @bind-Value="oWarehouse.warehouseAddress" class="form-group"></InputText>
+            <br />
+            <input type="button" value="Agregar" @onclick="SaveWarehouse" />
+        </EditForm>
+        <div class="h3 text-center">
+            @message
+        </div>
+    </div>
+
+
+@code {
+    WarehouseEntity oWarehouse = new WarehouseEntity();
+
+    string message;
+
+    private void SaveWarehouse()
+    {
+        B_Warehouse.CreateWarehouse(oWarehouse);
+        message = "El resgistro se actualizo exitosamente";
+    }
+
+}

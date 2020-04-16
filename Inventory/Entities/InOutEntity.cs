@@ -9,14 +9,16 @@ namespace Entities
     {
         [Key]
         [StringLength(100)]
-        [Required]
         public string inOutsID { get; set; }
+        [Required]
         public DateTime InOutDate { get; set; }
-        public string Quality { get; set; }
+        [Required]
+        public int Quality { get; set; }
+        [Required]
+        public bool IsInput { get; set; }
         /// <summary>
         /// Relación con el almacenamiento
         /// </summary>
-        [Required]
         public string storageId { get; set; }
         public StorageEntity Storage { get; set; }
     }
