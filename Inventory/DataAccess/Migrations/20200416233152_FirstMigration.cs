@@ -132,8 +132,8 @@ namespace DataAccess.Migrations
                 columns: new[] { "warehouseId", "WarehouseEntitywarehouseId", "warehouseAddress", "warehouseName" },
                 values: new object[,]
                 {
-                    { "77659337-b460-49ed-97b0-24d50d5d5bc3", null, "Calle 8 con 23", "Bodega Central" },
-                    { "800b48c9-001c-42f5-945b-32a88b851be1", null, "Calle norte con occidente", "Bodega Norte" }
+                    { "59c88b64-0944-4187-8b17-99da8562b4dd", null, "Calle 8 con 23", "Bodega Central" },
+                    { "10373f78-3baf-468d-97c8-76cb9fbfbb43", null, "Calle norte con occidente", "Bodega Norte" }
                 });
 
             migrationBuilder.InsertData(

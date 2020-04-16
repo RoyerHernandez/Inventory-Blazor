@@ -188,13 +188,13 @@ namespace DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            warehouseId = "55b46e48-5998-4a02-977c-e1d3eccfbedd",
+                            warehouseId = "b91dd517-698e-4d4e-a1a3-1d08ad20b49f",
                             warehouseAddress = "Calle 8 con 23",
                             warehouseName = "Bodega Central"
                         },
                         new
                         {
-                            warehouseId = "8ff1b8e5-e531-4dff-aae3-9ac04fdeb594",
+                            warehouseId = "58a3d9f7-372b-4571-8b85-f8af5f9683be",
                             warehouseAddress = "Calle norte con occidente",
                             warehouseName = "Bodega Norte"
                         });

@@ -9,22 +9,22 @@ namespace DataAccess.Migrations
             migrationBuilder.DeleteData(
                 table: "Warehouses",
                 keyColumn: "warehouseId",
-                keyValue: "77659337-b460-49ed-97b0-24d50d5d5bc3");
+                keyValue: "10373f78-3baf-468d-97c8-76cb9fbfbb43");
 
             migrationBuilder.DeleteData(
                 table: "Warehouses",
                 keyColumn: "warehouseId",
-                keyValue: "800b48c9-001c-42f5-945b-32a88b851be1");
+                keyValue: "59c88b64-0944-4187-8b17-99da8562b4dd");
 
             migrationBuilder.InsertData(
                 table: "Warehouses",
                 columns: new[] { "warehouseId", "WarehouseEntitywarehouseId", "warehouseAddress", "warehouseName" },
-                values: new object[] { "55b46e48-5998-4a02-977c-e1d3eccfbedd", null, "Calle 8 con 23", "Bodega Central" });
+                values: new object[] { "b91dd517-698e-4d4e-a1a3-1d08ad20b49f", null, "Calle 8 con 23", "Bodega Central" });
 
             migrationBuilder.InsertData(
                 table: "Warehouses",
                 columns: new[] { "warehouseId", "WarehouseEntitywarehouseId", "warehouseAddress", "warehouseName" },
-                values: new object[] { "8ff1b8e5-e531-4dff-aae3-9ac04fdeb594", null, "Calle norte con occidente", "Bodega Norte" });
+                values: new object[] { "58a3d9f7-372b-4571-8b85-f8af5f9683be", null, "Calle norte con occidente", "Bodega Norte" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -32,22 +32,22 @@ namespace DataAccess.Migrations
             migrationBuilder.DeleteData(
                 table: "Warehouses",
                 keyColumn: "warehouseId",
-                keyValue: "55b46e48-5998-4a02-977c-e1d3eccfbedd");
+                keyValue: "58a3d9f7-372b-4571-8b85-f8af5f9683be");
 
             migrationBuilder.DeleteData(
                 table: "Warehouses",
                 keyColumn: "warehouseId",
-                keyValue: "8ff1b8e5-e531-4dff-aae3-9ac04fdeb594");
+                keyValue: "b91dd517-698e-4d4e-a1a3-1d08ad20b49f");
 
             migrationBuilder.InsertData(
                 table: "Warehouses",
                 columns: new[] { "warehouseId", "WarehouseEntitywarehouseId", "warehouseAddress", "warehouseName" },
-                values: new object[] { "77659337-b460-49ed-97b0-24d50d5d5bc3", null, "Calle 8 con 23", "Bodega Central" });
+                values: new object[] { "59c88b64-0944-4187-8b17-99da8562b4dd", null, "Calle 8 con 23", "Bodega Central" });
 
             migrationBuilder.InsertData(
                 table: "Warehouses",
                 columns: new[] { "warehouseId", "WarehouseEntitywarehouseId", "warehouseAddress", "warehouseName" },
-                values: new object[] { "800b48c9-001c-42f5-945b-32a88b851be1", null, "Calle norte con occidente", "Bodega Norte" });
+                values: new object[] { "10373f78-3baf-468d-97c8-76cb9fbfbb43", null, "Calle norte con occidente", "Bodega Norte" });
         }
     }
 }

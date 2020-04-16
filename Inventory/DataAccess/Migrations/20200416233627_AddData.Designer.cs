@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(InventaryContext))]
-    [Migration("20200414015052_FirstMigration")]
-    partial class FirstMigration
+    [Migration("20200416233627_AddData")]
+    partial class AddData
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -190,13 +190,13 @@ namespace DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            warehouseId = "77659337-b460-49ed-97b0-24d50d5d5bc3",
+                            warehouseId = "b91dd517-698e-4d4e-a1a3-1d08ad20b49f",
                             warehouseAddress = "Calle 8 con 23",
                             warehouseName = "Bodega Central"
                         },
                         new
                         {
-                            warehouseId = "800b48c9-001c-42f5-945b-32a88b851be1",
+                            warehouseId = "58a3d9f7-372b-4571-8b85-f8af5f9683be",
                             warehouseAddress = "Calle norte con occidente",
                             warehouseName = "Bodega Norte"
                         });

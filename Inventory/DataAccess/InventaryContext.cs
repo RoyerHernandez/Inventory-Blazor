@@ -21,9 +21,13 @@ namespace DataAccess
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            if (!options.IsConfigured)
+          /*  if (!options.IsConfigured)
             {
                 options.UseSqlServer("Server=DESKTOP-2ID8ELN; DataBase=InventoryDb; User id=royer; Password=Israfel2112");
+            }*/
+            if (!options.IsConfigured)
+            {
+                options.UseSqlServer("Server=royerserver.database.windows.net; DataBase=InventoryDb; User id=RoyerAdmin; Password=Israfel2112");
             }
         }
 
