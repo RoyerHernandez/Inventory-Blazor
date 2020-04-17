@@ -6,3 +6,4 @@ D:\Platzi\Blazor\Inventory-Blazor\Inventory\Entities\obj\Debug\netcoreapp3.1\Ent
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Entities\obj\Debug\netcoreapp3.1\Entities.dll
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Entities\obj\Debug\netcoreapp3.1\Entities.csprojAssemblyReference.cache

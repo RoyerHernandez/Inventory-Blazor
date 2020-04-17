@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mzmrcxiXO7Lpk+dQqzubb55S6EExRF6WGGrsDY8kD0PMl+mkJrQR2CdkDYifFNDxpWF1Ed8ntX7MSfnfHgZhIQ==",
+  "dgSpecHash": "7uCG5macvGlwMHC8mrXCHKazQXVlicnKKulUEMZKztVnMBLGlC+RDjXGD7nrIQ6DZup0UARRIfj7QE8AacwMkQ==",
   "success": true,
   "projectFilePath": "D:\\Platzi\\Blazor\\Inventory-Blazor\\Inventory\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [

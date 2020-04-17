@@ -20,6 +20,14 @@ namespace Inventory
             Configuration = configuration;
         }
 
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+        Host.CreateDefaultBuilder(args)
+        .ConfigureWebHostDefaults(webBuilder =>
+        {
+            webBuilder.UseSetting(WebHostDefaults.DetailedErrorsKey, "true");
+            webBuilder.UseStartup<Startup>();
+        });
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
