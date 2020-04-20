@@ -27,7 +27,7 @@ namespace DataAccess
             }*/
             if (!options.IsConfigured)
             {
-                options.UseSqlServer("Server=royerserver.database.windows.net; DataBase=InventoryDb; User id=RoyerAdmin; Password=Israfel2112");
+                options.UseSqlServer("Server=tcp:royerserver.database.windows.net,1433;Initial Catalog=InventoryDb;Persist Security Info=False;User ID=RoyerAdmin;Password=Israfel2112;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             }
         }
 
