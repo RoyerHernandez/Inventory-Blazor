@@ -114,6 +114,13 @@ using Inventory.Components.Warehouses;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 16 "D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\_Imports.razor"
+using Inventory.Components.Orders;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/product/update/{IdProduct}")]
     public partial class UpdateProductPage : Microsoft.AspNetCore.Components.ComponentBase
     {

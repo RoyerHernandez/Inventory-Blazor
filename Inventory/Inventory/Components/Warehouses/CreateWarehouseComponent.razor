@@ -3,14 +3,23 @@
 
     <div>
         <EditForm Model="oWarehouse">
-            <label>Identificador de la Bodega:</label>
-            <InputText @bind-Value="oWarehouse.warehouseId" class="form-group"></InputText>
+            <fieldset>
+                <label>Identificador de la Bodega:    </label>
+                &nbsp;&nbsp;
+                <InputText @bind-Value="oWarehouse.warehouseId" class="form-group"></InputText>
+            </fieldset>
+                <br />
+            <fieldset>
+                <label>Nombre de la Bodega:</label>
+                &nbsp;&nbsp;
+                <InputText @bind-Value="oWarehouse.warehouseName" class="form-group"></InputText>
+            </fieldset>
             <br />
-            <label>Nombre de la Bodega:</label>
-            <InputText @bind-Value="oWarehouse.warehouseName" class="form-group"></InputText>
-            <br />
-            <label>Dirección de la Bodega:</label>
-            <InputText @bind-Value="oWarehouse.warehouseAddress" class="form-group"></InputText>
+            <fieldset>
+                <label>Dirección de la Bodega:</label>
+                &nbsp;&nbsp;
+                <InputText @bind-Value="oWarehouse.warehouseAddress" class="form-group"></InputText>
+            </fieldset>
             <br />
             <input type="button" value="Agregar" @onclick="SaveWarehouse" />
         </EditForm>

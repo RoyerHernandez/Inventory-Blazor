@@ -66,6 +66,7 @@ D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Ra
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Exercises\BlazorPages\Form001.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Exercises\Forms\Form002.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\InOuts\CreateInOutsComponent.razor.g.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Orders\OrderCreateComponent.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Products\CreateProductComponent.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Products\ListProductsComponent.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\Products\UpdateProductComponent.razor.g.cs
@@ -103,6 +104,7 @@ D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Ra
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Exercises\BlazorPages\Form001.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Exercises\Forms\Form002.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\InOuts\CreateInOutsComponent.razor.g.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Orders\OrderCreateComponent.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Products\CreateProductComponent.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Products\ListProductsComponent.razor.g.cs
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Debug\netcoreapp3.1\Razor\Components\Products\UpdateProductComponent.razor.g.cs
