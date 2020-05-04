@@ -18,7 +18,10 @@
             <label>Descripción del Producto :</label>
             <InputTextArea @bind-Value="oProduct.productDesciption" class="form-control"></InputTextArea>
         </div>
-        
+        <div class="form-group">
+            <label>Precio Unitario :</label>
+            <InputNumber @bind-Value="oProduct.unitPrice" class="form-control"></InputNumber>
+        </div>
         <div class="form-group">
             <label>Categoria :</label>
             <InputSelect @bind-Value="oProduct.categoryId" class="form-control">

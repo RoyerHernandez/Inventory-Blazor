@@ -14,7 +14,8 @@ namespace Entities
         [Required]
         public string productName { get; set; }
         public string productDesciption { get; set; }
-        public decimal totalQuantity { get; set; }
+        public int totalQuantity { get; set; }
+        public decimal unitPrice { get; set; }
         /// <summary>
         /// RElación con las categorias
         /// </summary>

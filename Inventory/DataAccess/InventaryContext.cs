@@ -18,6 +18,9 @@ namespace DataAccess
 
         public DbSet<InOutEntity> InOuts { get; set; }
 
+        public DbSet<OrderEntity> Orders { get; set; }
+
+        public DbSet<ClientEntity> Clients { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
@@ -42,6 +45,11 @@ namespace DataAccess
                 new CategoryEntity { categoryId = "BT", categoryName = "Boticario" },
                 new CategoryEntity { categoryId = "PB", categoryName = "Productos Bucales" },
                 new CategoryEntity { categoryId = "AS", categoryName = "Aseo Personal" }
+                );
+
+            modelBuilder.Entity<ClientEntity>().HasData(
+                new ClientEntity { clientId = 1024466070, clientName= "Jeimi Paola", clientLastName= "Chaparro", clientAddres="Cra 77 h # 65 j 86 sur", eMail="jeichap@hotmail.com", numberPhone = 7797467},
+                new ClientEntity { clientId = 80142463, clientName = "Royer A", clientLastName = "Hernandez M", clientAddres = "Cra 77 h # 65 j 86 sur", eMail = "jeichap@hotmail.com", numberPhone = 7797467 }
                 );
 
             modelBuilder.Entity<WarehouseEntity>().HasData(

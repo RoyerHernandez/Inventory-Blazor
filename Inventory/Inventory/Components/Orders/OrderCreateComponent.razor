@@ -1,6 +1,7 @@
 ﻿@using Entities
 @using Business
 
+<!--
 <hr />
     <select class="form-control" @onchange="CategoryChanged">
         <option value="">Seleccione una categoria....</option>
@@ -11,32 +12,68 @@
     </select>
 <hr />
 
-<table class="table table-bordered table-hover">
-    <thead>
-        <tr>
-            <th>Nombre del Producto</th>
-            <th>Categoria</th>
-            <th>Unit Price</th>
-            <th>Image</th>
-            <!--<th></th>-->
-        </tr>
-    </thead>
+<EditForm Model="oOrder">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Nombre del Producto</th>
+                <th>Categoria</th>
+                <th>Precio Unitario</th>
+                <th>Cantidad</th>
+                <th>Image</th>
+                <th>Agregar</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in tmpProducts)
+            {
+                <tr>
+                    <td>@product.productName</td>
+                    <td>@product.categoryId</td>
+                    <td>@product.unitPrice</td>
+                    <td></td>
+                    <td></td>
+                    <InputCheckbox class="form-control" @bind-Value="oOrder.IsAdd" @onchange="AddProductToOrder"/>
+                </tr>
+            }
+        </tbody>
+    </table>
+</EditForm>
+    -->
     <tbody>
-        @foreach (var product in tmpProducts)
-        {
-        <tr>
-            <td>@product.productName</td>
-            <td>@product.categoryId</td>
-            <td></td>
-            <td></td>
-            <!--<InputCheckbox></InputCheckbox>-->
-        </tr>
-        }
+        <div class="container">
+            <div class="row-fluid ">
+                @foreach (var product in tmpProducts)
+                {                     
+                    <div class="card mb-3" style="max-width: 1200px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="https://i.picsum.photos/id/201/5184/3456.jpg" class="img-thumbnail" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">@product.productName</h5>                                     
+                                    <p class="card-text">@product.categoryId</p>                                     
+                                    <p class="card-text">Precio Unitario $ COP - @product.unitPrice</p>
+                                    <p class="card-text">@product.productDesciption</p>
+                                    <p class="card-text"></p>
+                                    <!--<InputCheckbox class="form-control" @bind-Value="oOrder.IsAdd" @onchange="AddProductToOrder" />-->
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <input type="button" value="Agregar al Carrito"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                }
+            </div>
+        </div>
     </tbody>
-</table>
+
+
 @message;
 
 @code {
+    OrderEntity oOrder = new OrderEntity();
 
     List<ProductEntity> products = new List<ProductEntity>();
     List<ProductEntity> tmpProducts = new List<ProductEntity>();
@@ -53,6 +90,17 @@
     {
         //message = e.Value.ToString();
         tmpProducts = products.Where(c => c.categoryId == e.Value.ToString()).ToList();
+    }
+    private void AddProductToOrder(ChangeEventArgs e)
+    {
+        if (oOrder.IsAdd)
+        {
+            B_Order.AddProducToOrder(oOrder);
+        }
+        else
+        {
+
+        }
     }
 
 }
