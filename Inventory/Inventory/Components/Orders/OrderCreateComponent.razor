@@ -1,17 +1,18 @@
 ﻿@using Entities
 @using Business
 
-<!--
+
 <hr />
-    <select class="form-control" @onchange="CategoryChanged">
-        <option value="">Seleccione una categoria....</option>
-        @foreach (var category in categories)
-        {
-            <option value="@category.categoryId">@category.categoryName</option>
-        }
-    </select>
+<select class="form-control" @onchange="CategoryChanged">
+    <option value="">Seleccione una categoria....</option>
+    @foreach (var category in categories)
+    {
+        <option value="@category.categoryId">@category.categoryName</option>
+    }
+</select>
 <hr />
 
+<!--
 <EditForm Model="oOrder">
     <table class="table table-bordered table-hover">
         <thead>
@@ -40,11 +41,12 @@
     </table>
 </EditForm>
     -->
-    <tbody>
-        <div class="container">
+<tbody>
+    <div class="container">
+        <EditForm Model="oOrder">
             <div class="row-fluid ">
                 @foreach (var product in tmpProducts)
-                {                     
+                {
                     <div class="card mb-3" style="max-width: 1200px;">
                         <div class="row no-gutters">
                             <div class="col-md-4">
@@ -52,23 +54,28 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">@product.productName</h5>                                     
-                                    <p class="card-text">@product.categoryId</p>                                     
+                                    <h5 class="card-title">@product.productName</h5>
+                                    <p class="card-text">@product.categoryId</p>
                                     <p class="card-text">Precio Unitario $ COP - @product.unitPrice</p>
                                     <p class="card-text">@product.productDesciption</p>
                                     <p class="card-text"></p>
                                     <!--<InputCheckbox class="form-control" @bind-Value="oOrder.IsAdd" @onchange="AddProductToOrder" />-->
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    <input type="button" value="Agregar al Carrito"/>
+                                    <input type="button" value="Agregar al Carrito" @onclick="AddProductToOrder" />
                                 </div>
                             </div>
                         </div>
-                    </div>                    
+                    </div>
+                    <InputText @bind-Value="oOrder.orderId" class="form-control">212323132</InputText>
+                    <InputText @bind-Value="oOrder.productName" class="form-control">@product.productName</InputText>
+                    <InputText @bind-Value="oOrder.clientFullname" class="form-control">jUAN pEREZ</InputText>
+                    <InputNumber @bind-Value="oOrder.unitPrice" class="form-control">@product.unitPrice</InputNumber>
+                    <InputNumber @bind-Value="oOrder.totalPrice" class="form-control">@product.unitPrice</InputNumber>                    
                 }
-            </div>
-        </div>
-    </tbody>
-
+            </div>            
+        </EditForm>
+    </div>
+</tbody>
 
 @message;
 
@@ -91,16 +98,10 @@
         //message = e.Value.ToString();
         tmpProducts = products.Where(c => c.categoryId == e.Value.ToString()).ToList();
     }
-    private void AddProductToOrder(ChangeEventArgs e)
+    private void AddProductToOrder()
     {
-        if (oOrder.IsAdd)
-        {
-            B_Order.AddProducToOrder(oOrder);
-        }
-        else
-        {
+        B_Order.AddProducToOrder(oOrder);
 
-        }
     }
 
 }

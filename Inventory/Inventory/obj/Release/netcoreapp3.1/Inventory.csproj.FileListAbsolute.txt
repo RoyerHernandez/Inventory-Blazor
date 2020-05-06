@@ -143,3 +143,5 @@ D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Release\netcoreapp3.1\
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Release\netcoreapp3.1\Inventory.dll
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Release\netcoreapp3.1\Inventory.pdb
 D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Release\netcoreapp3.1\Inventory.genruntimeconfig.cache
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Release\netcoreapp3.1\RazorDeclaration\Components\Orders\OrderCreateComponent.razor.g.cs
+D:\Platzi\Blazor\Inventory-Blazor\Inventory\Inventory\obj\Release\netcoreapp3.1\Razor\Components\Orders\OrderCreateComponent.razor.g.cs

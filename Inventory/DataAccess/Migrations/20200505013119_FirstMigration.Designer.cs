@@ -4,14 +4,16 @@ using DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(InventaryContext))]
-    partial class InventaryContextModelSnapshot : ModelSnapshot
+    [Migration("20200505013119_FirstMigration")]
+    partial class FirstMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -2760,13 +2762,13 @@ namespace DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            warehouseId = "2c632cf4-02c5-4c8d-b275-a05aeff287f9",
+                            warehouseId = "cf9d55a2-c52b-46e8-82f4-691602f046d5",
                             warehouseAddress = "Calle 8 con 23",
                             warehouseName = "Bodega Central"
                         },
                         new
                         {
-                            warehouseId = "6fdc47ae-d0db-4cad-849d-ef8a00b81e66",
+                            warehouseId = "7cb8e915-5704-41ad-8e4e-090cb95246aa",
                             warehouseAddress = "Calle norte con occidente",
                             warehouseName = "Bodega Sur"
                         });
