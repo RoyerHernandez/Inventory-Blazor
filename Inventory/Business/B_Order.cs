@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using DataAccess;
 using Entities;
+using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
 namespace Business
@@ -13,8 +14,11 @@ namespace Business
         {
             using(var db = new InventaryContext())
             {
+                ProductEntity produc = new ProductEntity();
+
                 try
                 {
+                    oOrder.orderId = Guid.NewGuid().ToString();
                     db.Orders.Add(oOrder);
                     db.SaveChanges();
                 } catch (DbUpdateException)

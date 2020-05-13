@@ -41,9 +41,9 @@
     </table>
 </EditForm>
     -->
+
 <tbody>
     <div class="container">
-        <EditForm Model="oOrder">
             <div class="row-fluid ">
                 @foreach (var product in tmpProducts)
                 {
@@ -55,31 +55,31 @@
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">@product.productName</h5>
+                                    <!--<InputNumber class="form-control" @bind-Value="@product.productId" readonly="true" />-->
+                                    <p class="card-text">@product.productId</p>
                                     <p class="card-text">@product.categoryId</p>
                                     <p class="card-text">Precio Unitario $ COP - @product.unitPrice</p>
                                     <p class="card-text">@product.productDesciption</p>
                                     <p class="card-text"></p>
                                     <!--<InputCheckbox class="form-control" @bind-Value="oOrder.IsAdd" @onchange="AddProductToOrder" />-->
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    <input type="button" value="Agregar al Carrito" @onclick="AddProductToOrder" />
+                                    <input type="button" value="Agregar al Carrito" @onclick="(() => AddProductToOrder(product.productName))" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <InputText @bind-Value="oOrder.orderId" class="form-control">212323132</InputText>
-                    <InputText @bind-Value="oOrder.productName" class="form-control">@product.productName</InputText>
-                    <InputText @bind-Value="oOrder.clientFullname" class="form-control">jUAN pEREZ</InputText>
-                    <InputNumber @bind-Value="oOrder.unitPrice" class="form-control">@product.unitPrice</InputNumber>
-                    <InputNumber @bind-Value="oOrder.totalPrice" class="form-control">@product.unitPrice</InputNumber>                    
                 }
-            </div>            
-        </EditForm>
+            </div>
     </div>
 </tbody>
+
 
 @message;
 
 @code {
+    [Parameter]
+    public EventCallback name { get; set; }
+
     OrderEntity oOrder = new OrderEntity();
 
     List<ProductEntity> products = new List<ProductEntity>();
@@ -98,8 +98,10 @@
         //message = e.Value.ToString();
         tmpProducts = products.Where(c => c.categoryId == e.Value.ToString()).ToList();
     }
-    private void AddProductToOrder()
+    private void AddProductToOrder(string name)
     {
+        oOrder.productName = name;
+
         B_Order.AddProducToOrder(oOrder);
 
     }
