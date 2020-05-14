@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(InventaryContext))]
-    [Migration("20200509220055_FirstMigration")]
+    [Migration("20200514024910_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -148,16 +148,16 @@ namespace DataAccess.Migrations
                     b.Property<string>("orderId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<bool>("IsAdd")
-                        .HasColumnType("bit");
-
                     b.Property<string>("clientFullname")
                         .HasColumnType("nvarchar(150)")
                         .HasMaxLength(150);
 
-                    b.Property<int>("clientId")
-                        .HasColumnType("int")
+                    b.Property<string>("clientIdentifier")
+                        .HasColumnType("nvarchar(12)")
                         .HasMaxLength(12);
+
+                    b.Property<DateTime>("orderDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("productName")
                         .HasColumnType("nvarchar(max)");
@@ -280,13 +280,13 @@ namespace DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            warehouseId = "af32d94e-692b-499e-a667-a765a9cf1e85",
+                            warehouseId = "378a691f-ed77-43d5-b1f4-efbee830f21d",
                             warehouseAddress = "Calle 8 con 23",
                             warehouseName = "Bodega Central"
                         },
                         new
                         {
-                            warehouseId = "263f1ec5-0759-43fb-82cb-a187385e7cb3",
+                            warehouseId = "28ad519f-8389-4662-9c23-1a4c4688d177",
                             warehouseAddress = "Calle norte con occidente",
                             warehouseName = "Bodega Norte"
                         });

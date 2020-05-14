@@ -41,12 +41,12 @@ namespace DataAccess.Migrations
                 columns: table => new
                 {
                     orderId = table.Column<string>(nullable: false),
-                    clientId = table.Column<int>(maxLength: 12, nullable: false),
+                    clientIdentifier = table.Column<string>(maxLength: 12, nullable: true),
                     clientFullname = table.Column<string>(maxLength: 150, nullable: true),
                     productName = table.Column<string>(nullable: true),
                     unitPrice = table.Column<decimal>(nullable: false),
                     totalPrice = table.Column<decimal>(nullable: false),
-                    IsAdd = table.Column<bool>(nullable: false)
+                    orderDate = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -176,8 +176,8 @@ namespace DataAccess.Migrations
                 columns: new[] { "warehouseId", "WarehouseEntitywarehouseId", "warehouseAddress", "warehouseName" },
                 values: new object[,]
                 {
-                    { "af32d94e-692b-499e-a667-a765a9cf1e85", null, "Calle 8 con 23", "Bodega Central" },
-                    { "263f1ec5-0759-43fb-82cb-a187385e7cb3", null, "Calle norte con occidente", "Bodega Norte" }
+                    { "378a691f-ed77-43d5-b1f4-efbee830f21d", null, "Calle 8 con 23", "Bodega Central" },
+                    { "28ad519f-8389-4662-9c23-1a4c4688d177", null, "Calle norte con occidente", "Bodega Norte" }
                 });
 
             migrationBuilder.InsertData(

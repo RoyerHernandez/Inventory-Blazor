@@ -146,16 +146,16 @@ namespace DataAccess.Migrations
                     b.Property<string>("orderId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<bool>("IsAdd")
-                        .HasColumnType("bit");
-
                     b.Property<string>("clientFullname")
                         .HasColumnType("nvarchar(150)")
                         .HasMaxLength(150);
 
-                    b.Property<int>("clientId")
-                        .HasColumnType("int")
+                    b.Property<string>("clientIdentifier")
+                        .HasColumnType("nvarchar(12)")
                         .HasMaxLength(12);
+
+                    b.Property<DateTime>("orderDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("productName")
                         .HasColumnType("nvarchar(max)");
@@ -278,13 +278,13 @@ namespace DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            warehouseId = "f9e6d255-9a74-45fc-afe8-73f0ed1ab71a",
+                            warehouseId = "30b98929-5a5e-4030-96ec-94c94342172e",
                             warehouseAddress = "Calle 8 con 23",
                             warehouseName = "Bodega Central"
                         },
                         new
                         {
-                            warehouseId = "85b09fbd-31d2-4fa1-a906-45918ba746d2",
+                            warehouseId = "140204f9-d989-4a43-8c88-a33e1d3e20c5",
                             warehouseAddress = "Calle norte con occidente",
                             warehouseName = "Bodega Norte"
                         });

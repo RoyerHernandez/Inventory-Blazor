@@ -29,5 +29,12 @@ namespace Business
             }
 
         }
+
+        public static int CreateIdentifier()
+        {
+            var rdn = new Random().Next(10000,99999);
+
+            return rdn;
+        }
     }
 }
