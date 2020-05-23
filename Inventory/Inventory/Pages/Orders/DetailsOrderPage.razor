@@ -1,0 +1,19 @@
+﻿@page "/order/list/{clientIdentifier}"
+
+<hr>
+<a href="product/create">Crear Orden</a>
+<hr />
+
+<OrderDetailsComponent clientIdentifier="@clientIdentifier"/>
+
+
+@code
+{
+    [Parameter]
+    public string clientIdentifier { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        clientIdentifier = clientIdentifier;
+    }
+}

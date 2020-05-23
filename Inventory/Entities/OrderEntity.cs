@@ -17,5 +17,6 @@ namespace Entities
         public decimal unitPrice { get; set; }
         public decimal totalPrice { get; set; }
         public DateTime orderDate { get; set; }
+              
     }
 }

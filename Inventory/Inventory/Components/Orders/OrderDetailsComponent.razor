@@ -1,0 +1,72 @@
+﻿@using Entities
+@using Business
+
+
+<h1>Carrito de Compras</h1>
+
+<div class="container-fluid">
+    <p class="float-left">
+        <span class="oi oi-target" style="font-size: 60px"></span>
+    </p>
+</div>
+
+
+<tbody>
+    <div class="container">
+        <div class="row-fluid ">
+            @foreach (var order in orders)
+            {
+                <div class="card mb-3" style="max-width: 1800px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="https://i.picsum.photos/id/201/5184/3456.jpg" class="img-thumbnail" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">@order.productName</h5>
+                                <p class="card-text">@order.clientIdentifier</p>
+                                <p class="card-text">@order.orderId</p>
+                                <p class="card-text">@order.unitPrice</p>
+                                <p class="card-text">@order.orderDate</p>
+                                <p class="card-text"></p>
+                                <!--<InputCheckbox class="form-control" @bind-Value="oOrder.IsAdd" @onchange="AddProductToOrder" />-->
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</tbody>
+
+
+@message;
+
+
+@code {
+    [Parameter]
+    public string clientIdentifier { get; set; }
+
+    OrderEntity oOrder = new OrderEntity();
+
+    //List<OrderEntity> orders = new List<OrderEntity>();
+    //IEnumerable<OrderEntity> orders = new IEnumerable<OrderEntity>();
+    IEnumerable<OrderEntity> orders;
+
+    string identifier;
+    string message;
+
+    protected override async Task OnInitializedAsync()
+    {
+        //orders = B_Order.OrderList();
+
+        orders = B_Order.OrderById(clientIdentifier);
+    }
+    private void CategoryChanged(ChangeEventArgs e)
+    {
+        message = "";
+        //tmpProducts = products.Where(c => c.categoryId == e.Value.ToString()).ToList();
+    }
+
+}

@@ -1,6 +1,6 @@
 ﻿@using Entities
 @using Business
-
+@inject NavigationManager NavManager
 
 <hr />
 <select class="form-control" @onchange="CategoryChanged">
@@ -44,31 +44,32 @@
 
 <tbody>
     <div class="container">
-            <div class="row-fluid ">
-                @foreach (var product in tmpProducts)
-                {
-                    <div class="card mb-3" style="max-width: 1200px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="https://i.picsum.photos/id/201/5184/3456.jpg" class="img-thumbnail" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">@product.productName</h5>
-                                    <p class="card-text">@product.productId</p>
-                                    <p class="card-text">@product.categoryId</p>
-                                    <p class="card-text">Precio Unitario $ COP - @product.unitPrice</p>
-                                    <p class="card-text">@product.productDesciption</p>
-                                    <p class="card-text"></p>
-                                    <!--<InputCheckbox class="form-control" @bind-Value="oOrder.IsAdd" @onchange="AddProductToOrder" />-->
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    <input type="button" value="Agregar al Carrito" @onclick="(() => AddProductToOrder(product.productName, product.unitPrice))" />
-                                </div>
+        <div class="row-fluid ">
+            @foreach (var product in tmpProducts)
+            {
+                <div class="card mb-3" style="max-width: 1800px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="https://i.picsum.photos/id/201/5184/3456.jpg" class="img-thumbnail" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">@product.productName</h5>
+                                <p class="card-text">@product.productId</p>
+                                <p class="card-text">@product.categoryId</p>
+                                <p class="card-text">Precio Unitario $ COP - @product.unitPrice</p>
+                                <p class="card-text">@product.productDesciption</p>
+                                <p class="card-text"></p>
+                                <!--<InputCheckbox class="form-control" @bind-Value="oOrder.IsAdd" @onchange="AddProductToOrder" />-->
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <input type="button" value="Agregar al Carrito" @onclick="(() => AddProductToOrder(product.productName, product.unitPrice))" />
+                                <td><a href="order/list/@oOrder.clientIdentifier">Ir al Carrito de Compras</a></td>
                             </div>
                         </div>
                     </div>
-                }
-            </div>
+                </div>
+            }
+        </div>
     </div>
 </tbody>
 
@@ -92,7 +93,7 @@
         categories = B_Category.CategoryList();
 
         if (String.IsNullOrEmpty(identifier))
-        identifier = B_Order.CreateIdentifier().ToString();
+            identifier = B_Order.CreateIdentifier().ToString();
     }
     private void CategoryChanged(ChangeEventArgs e)
     {
@@ -107,8 +108,9 @@
         oOrder.orderDate = DateTime.Now;
 
         B_Order.AddProducToOrder(oOrder);
-
+        
         message = $"El producto {oOrder.productName} se ha agregado exitosamente a tu carrito de compras";
+        //NavManager.NavigateTo($"order/list/{oOrder.clientIdentifier}");
 
     }
 

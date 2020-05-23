@@ -12,7 +12,7 @@ namespace Business
     {
         public static void AddProducToOrder(OrderEntity oOrder)
         {
-            using(var db = new InventaryContext())
+            using (var db = new InventaryContext())
             {
                 ProductEntity produc = new ProductEntity();
 
@@ -29,6 +29,20 @@ namespace Business
             }
 
         }
+        public static IEnumerable<OrderEntity> OrderById(string id)
+        {
+            using (var db = new InventaryContext())
+            {
+                return db.Orders.ToList().Where(o => o.clientIdentifier == id); // Products.ToList().LastOrDefault(p => p.productId == id);
+            }
+        }
+
+        public static List<OrderEntity> OrderList(){
+            using (var db = new InventaryContext()) 
+            {
+               return db.Orders.ToList();
+            }                
+        } 
 
         public static int CreateIdentifier()
         {
